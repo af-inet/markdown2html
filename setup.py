@@ -4,5 +4,5 @@ import setuptools
 setuptools.setup(
     name='markdown2html',
     version='1.0.0',
-    packages=[],
-    scripts=["markdown2html"])
+    packages=['markdown2html'],
+    scripts=['bin/markdown2html'])
