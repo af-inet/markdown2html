@@ -12,16 +12,20 @@ python setup.py install
 
 ## supported syntax
 
-```# title
+```
+# title
 ```
 
-```## subtitle
+```
+## subtitle
 ```
 
-```[link] (https://www.example.com/)
+```
+[link] (https://www.example.com/)
 ```
 
-```![image] (https://upload.wikimedia.org/wikipedia/commons/7/70/Example.png)
+```
+![image] (https://upload.wikimedia.org/wikipedia/commons/7/70/Example.png)
 ```
 
 (code-snippet seperated with a newline)
