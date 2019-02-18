@@ -140,13 +140,14 @@ def process_file(file):
     tick_state = TICK_STATE_BEGIN
     for line in file:
         line, tick_state = process_line(line, tick_state)
-        sys.stdout.write(line)
+        yield line
 
 
 def main():
     args = parse_args()
     file = open(args.filename, 'r') if args.filename != '-' else sys.stdin
-    process_file(file)
+    for line in process_file(file):
+        sys.stdout.write(line)
 
 
 def test_replace_links():
